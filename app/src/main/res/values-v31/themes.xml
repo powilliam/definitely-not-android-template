@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Template" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar" />
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.Template" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@android:color/transparent</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+    </style>
+</resources>
