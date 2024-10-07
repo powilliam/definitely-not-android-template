@@ -44,6 +44,7 @@ android {
 
 dependencies {
     val compose = platform(libs.compose)
+    val koin = platform(libs.koin.bom)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.core.splashscreen)
@@ -51,6 +52,10 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.material)
+
+    implementation(koin)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
 
     implementation(compose)
     implementation(libs.compose.material)
@@ -61,6 +66,8 @@ dependencies {
     debugImplementation(libs.compose.ui.test.manifest)
 
     testImplementation(libs.junit)
+    testImplementation(libs.koin.test)
+    testImplementation(libs.koin.test.junit4)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
